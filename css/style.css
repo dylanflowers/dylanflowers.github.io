@@ -1,0 +1,68 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FCFBF9;
+}
+#header {background-color: grey;}
+/*#work {background: yellow;}*/
+#about {
+  background: #272932;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-left: 0px;
+  width: 100%;
+  color: #A6A2A2;
+  }
+h1 {
+  margin: 5px 20px 20px 20px;
+  font-weight: bold !important;
+  }
+h2 {
+  margin: 20px;
+}
+
+h3 {
+  margin: 10px auto 20px;
+  font-weight: 300;
+  font-size: large;
+  }
+#about img {
+  margin-top: -56px
+}
+p {
+  margin:auto 20px;
+  padding: 10px;
+  }
+
+#work img {max-width: 100%}
+#links {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.red {
+  color: #DD6E6F
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+button {
+  background: rgba(255,255,255, 0.0);
+  border: 0px;
+}
+.navbar-default {background-color: #FCFBF9;}
+.my-name {margin: 5px;}
+
+.nav-dot a {
+  /*border-bottom-left-radius: 50%;*/
+  /*border-bottom-right-radius: 50%;*/
+  /*border-top-left-radius: 50%;*/
+  /*border-top-right-radius: 50%;*/
+  /*box-sizing: border-box;*/
+  /*border-color: black;*/
+  /*border-width: medium;*/
+  border-bottom: solid black 10px;
+
+}
+h3 .ux-designer {margin-top:5px;}

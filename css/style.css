@@ -19,6 +19,11 @@ h1 {
   }
 h2 {
   margin: 20px;
+  font-weight: 800;
+}
+
+.my-name {
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -27,8 +32,9 @@ h3 {
   font-size: large;
   }
 #about img {
-  margin-top: -56px
-}
+  margin-top: -65px;
+  max-width: 130px;
+  }
 p {
   margin:auto 20px;
   padding: 10px;
@@ -36,7 +42,7 @@ p {
 
 #work img {max-width: 100%}
 #links {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .red {
@@ -54,15 +60,49 @@ button {
 .navbar-default {background-color: #FCFBF9;}
 .my-name {margin: 5px;}
 
-.nav-dot a {
-  /*border-bottom-left-radius: 50%;*/
-  /*border-bottom-right-radius: 50%;*/
-  /*border-top-left-radius: 50%;*/
-  /*border-top-right-radius: 50%;*/
-  /*box-sizing: border-box;*/
-  /*border-color: black;*/
-  /*border-width: medium;*/
-  border-bottom: solid black 10px;
 
+.ux-designer {margin-top:0px;}
+
+
+a.scroll.add-dot {
+	overflow:hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
+a.scroll.add-dot:before {
+  content: url(/Users/dylan_flowers94/Desktop/dylanflowers.github.io/assets/icons/dot.png);
+	position: absolute;
+	right: 45%;
+	bottom: -30px;
+	transition: all 200ms ease;
+  opacity: 0;
 }
-h3 .ux-designer {margin-top:5px;}
+
+a.scroll.add-dot:hover:before {
+  bottom: -3px;
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+ul.nav {
+  padding-bottom: 0px;
+}
+
+.nav>li>a>img {
+    max-width: 75%;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.read-more { max-width: 5%}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color:  #272932;
+}
+
+a {
+  color:  #272932;
+}

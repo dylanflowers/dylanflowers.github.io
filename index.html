@@ -7,9 +7,13 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="./simple-scroll.js"></script>
+    </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico"/>
   </head>
   <body>
     <header id="header">
@@ -29,12 +33,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="mailto:dylan.b.flowers@gmail.com"><img src="assets/icons/gmail.png" alt="gmail icon"></a></li>
-        <li><a href="http://www.twitter.com/dylanbflowers1" target="_blank"><img src="assets/icons/twitter.png" alt="twitter icon"></a></li>
-        <li><a href="http://www.medium.com/@dylan.b.flowers" target="_blank"><img src="assets/icons/medium.png" alt="medium icon"></a></li>
-        <li><a href="http://www.linkedin.com/in/dylanflowers" target="_blank"><img src="assets/icons/linkedin.png" alt="linkedin icon"></a></li>
+        <li><a href="#profile-photo" class="scroll add-dot">About</a></li>
+        <li><a href="#work"class="scroll add-dot">Work</a></li>
+        <li><a href="mailto:dylan.b.flowers@gmail.com"><img src="assets/icons/gmail.png" alt="gmail icon"class="link-icon"></a></li>
+        <li><a href="http://www.twitter.com/dylanbflowers1" target="_blank"><img src="assets/icons/twitter.png" alt="twitter icon" class="link-icon"></a></li>
+        <li><a href="http://www.medium.com/@dylan.b.flowers" target="_blank"><img src="assets/icons/medium.png" alt="medium icon" class="link-icon"></a></li>
+        <li><a href="http://www.linkedin.com/in/dylanflowers" target="_blank"><img src="assets/icons/linkedin.png" alt="linkedin icon" class="link-icon"></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -44,9 +48,9 @@
     <main class="container-fluid">
       <section id="about">
         <div class="row text-center">
-          <img id="profile-photo"src="assets/images/about/Bitmap.png" alt="photo of me">
+          <img id="profile-photo"src="/Users/dylan_flowers94/Desktop/dylanflowers.github.io/assets/images/about/profile_image.png" alt="photo of me">
           <h2 class="my-name">Dylan<span class="red">.</span>Flowers</h2>
-          <h3 calss="ux-designer">UX designer</h3>
+          <h3 class="ux-designer">UX designer</h3>
         </div>
         <div class="row">
           <div class="col-md-2"></div>
@@ -60,27 +64,32 @@
 
       <div class="container-fluid">
       <section id="work">
-        <h2 class="text-center" class="text-grey">My Work<span class="red">:</span></h2>
+        <h2 class="text-center" class="text-grey"><a href="#work"class="scroll">My Work</a></h2>
         <div class="row text-center">
           <div class="col-xs-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
-            <button data-toggle="modal" data-target="#project1modal">
+            <!-- <button data-toggle="modal" data-target="#airfrance-modal"> -->
+              <img src="assets/images/project_2/project_2_thumbnail.png">
+              <h3>Vive l'Air France</h3>
+            <!-- </button> -->
+          </div>
+
+          <div class="col-xs-6 col-md-4 col-lg-3">
+            <button data-toggle="modal" data-target="#edge-sport-modal">
+              <img src="assets/images/project_3/project_3_thumbnail.png" alt="edge sport thumbnail">
+              <h3>Taking Online Shopping to the Edge</h3>
+            </button>
+
+          </div>
+          </div>
+
+        <div class="row text-center">
+          <div class="col-xs-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
+            <button data-toggle="modal" data-target="#mini-break-modal">
               <img src="assets/images/project_1/project_1_thumbnail.png" >
               <h3>Kill Time Without Killing Yourself</h3>
             </button>
           </div>
 
-          <div class="col-xs-6 col-md-4 col-lg-3">
-            <button data-toggle="modal" data-target="#project2modal">
-              <img src="assets/images/project_2/project_2_thumbnail.png">
-              <h3>Vive l'Air France</h3>
-            </button>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
-            <img src="assets/images/project_3/project_3_thumbnail.png" alt="edge sport thumbnail">
-            <h3>Taking Online Shopping to the Edge</h3>
-          </div>
           <div class="col-xs-6 col-md-4 col-lg-3">
             <img src="assets/images/project_4/project_4_thumbnail.png" alt="kus visual thumbnail">
             <h3>Kus Visual Website</h3>
@@ -99,7 +108,7 @@
         </ul>
       </section>
 
-      <div id="project1modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+      <div id="mini-break-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -111,7 +120,7 @@
                   <div class="col-*-2"></div>
                   <div class="col-*-8">
                     <h1 class="text-center">Kill Time Without Killing Yourself</h1>
-                    <img class="text-center" src="assets/images/project_1/project_1_main_image.png" alt="Mini Break Icon" width="200px" class="text-center">
+                    <img class="text-center" src="/Users/dylan_flowers94/Desktop/dylanflowers.github.io/assets/images/project_1/mini_break_main.png" alt="Mini Break Icon" width="100%" class="text-center">
                     <h2>How I designed an app that gives ex-smokers their little moments of freedom back.</h2>
                       <p>
                         This was a one week research project exploring how deep one explore a specific user's needs. After meeting my user heavy interviews were conducted to analyse every aspect of the user's life. One major pain area that kept appearing was that she had recently given up smoking and was feeling a lack of satisfaction with her new lifestyle.</p>
@@ -120,7 +129,7 @@
                         </p>
                         <p>I believe this app has a possible future in the service industry. It is common knowledge that ‘smokers get all the breaks’, this has the potential to level the playing field. An employer could feasibly give out a chosen number of breaks per shift that employees could call upon at any time whether they are a smoker or not.</p>
                         <p>Overall his app has huge potential to help reduce stress in a healthy manor.</p>
-                        <p><a href="https://medium.com/@dylan.b.flowers/break-ing-into-apps-acf0487ff28e" target="_blank">Read more <img src="assets/icons/medium.png" alt="medium icon"></a>
+                        <p><a href="https://medium.com/@dylan.b.flowers/break-ing-into-apps-acf0487ff28e" target="_blank">Read more <img src="assets/icons/medium.png" alt="medium icon" class="read-more"></a>
                         </p>
                   </div>
                   <div class="col-*-2"></div>
@@ -135,7 +144,7 @@
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
 
-      <div id="project2modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+      <div id="edge-sport-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -155,7 +164,7 @@
                         <p>The project focussed heavily on rapid prototyping and user testing to constantly gain insight. With every test the usability and business interests of the site were assessed. The result was a wireframe prototype for Edge Sport that exploited their expert knowledge and small shop appeal. This was done through a variety of ways but the most innovative being a video shopping experience where the shop staff can show off their bespoke advice.</p>
                         <img src="assets/images/project_2/project_2_body_image.png" alt="body image" width="100%">
                         <p>In a market that Amazon dominates a unique way that the little guy can compete has been developed, as a result of rapid ideation and testing.</p>
-                        <p><a href="https://medium.com/@dylan.b.flowers/taking-online-shopping-to-the-edge-ff4a5eac476f" target="_blank">Read more<img src="assets/icons/medium.png" alt="medium icon"></a></p>
+                        <p><a href="https://medium.com/@dylan.b.flowers/taking-online-shopping-to-the-edge-ff4a5eac476f" target="_blank">Read more<img src="assets/icons/medium.png" alt="medium icon" class="read-more"></a></p>
                   </div>
                   <div class="col-*-2"></div>
                 </div>
@@ -212,6 +221,6 @@
           </section>
 -->
     </main>
-    <h4 class="text-center"><a href="#header" color="#7DCDF6">Back to top ^</a></h4>
+    <h4 class="text-center" ><a href="#header" color="#7DCDF6"class="scroll">Back to top ^</a></h4>
   </body>
 </html>

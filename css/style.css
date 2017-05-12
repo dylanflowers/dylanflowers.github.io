@@ -71,7 +71,7 @@ a.scroll.add-dot {
   }
 
 a.scroll.add-dot:before {
-  content: url(assets/icons/dot.png);
+  content: "•";
 	position: absolute;
 	right: 45%;
 	bottom: -30px;

@@ -71,6 +71,7 @@ a.scroll.add-dot {
   }
 
 a.scroll.add-dot:before {
+  max-width: 500%;
   content: "•";
 	position: absolute;
 	right: 45%;

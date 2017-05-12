@@ -71,7 +71,7 @@ a.scroll.add-dot {
   }
 
 a.scroll.add-dot:before {
-  content: url(/Users/dylan_flowers94/Desktop/dylanflowers.github.io/assets/icons/dot.png);
+  content: url(assets/icons/dot.png);
 	position: absolute;
 	right: 45%;
 	bottom: -30px;

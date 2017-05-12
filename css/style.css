@@ -106,3 +106,5 @@ a:focus, a:hover {
 a {
   color:  #272932;
 }
+
+#read-more-text {text-decoration: underline;}
